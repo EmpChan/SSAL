@@ -3,3 +3,4 @@
 .venv
 .gemini
 *.db
+*__pycache__
