@@ -1,5 +1,5 @@
 # test.py
-from graph import app
+from langGraph.graph import app
 
 # 테스트 케이스 1 - 일반 공지 (title, date 추출)
 test_normal = {

@@ -1,7 +1,7 @@
 # nodes.py
 from langchain_ollama import ChatOllama
 from langchain_core.prompts import ChatPromptTemplate
-from models import NoticeState
+from langGraph.models import NoticeState
 import json, re
 
 llm = ChatOllama(
