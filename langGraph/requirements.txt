@@ -1,0 +1,38 @@
+# requirements.txt
+
+# ✅ LangGraph & LangChain 코어
+langgraph>=0.2.0
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-ollama>=0.2.0      # ✅ OpenAI 대신 이걸로
+langchain-community>=0.3.0   # ✅ Ollama 지원 포함
+
+# ✅ 웹훅 서버 (FastAPI)
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9      # form data 처리
+
+# ✅ HTTP 클라이언트
+httpx>=0.27.0
+aiohttp>=3.10.0
+
+# ✅ 데이터 처리
+pydantic>=2.8.0              # 데이터 검증 (FastAPI와 함께 필수)
+python-dotenv>=1.0.0         # .env 환경변수 관리
+
+# ✅ DB 연동 (사용하는 DB에 맞게 선택)
+# -- PostgreSQL
+asyncpg>=0.29.0
+sqlalchemy[asyncio]>=2.0.0
+psycopg2-binary>=2.9.0
+
+# -- MongoDB
+motor>=3.5.0                 # 비동기 MongoDB
+
+# -- Supabase
+supabase>=2.7.0
+
+# ✅ 유틸리티
+emoji>=2.12.0                # 이모지 처리
+python-dateutil>=2.9.0       # 날짜 파싱
+regex>=2024.7.24             # 정규식 확장
